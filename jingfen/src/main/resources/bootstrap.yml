@@ -1,0 +1,16 @@
+server:
+  port: 8866
+spring:
+  application:
+    name: jingfen
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.2.8:8848
+        group: DEFAULT_GROUP
+        namespace: 52478819-0492-4091-9890-eca56e726d39
+      config:
+        server-addr: 192.168.2.8:8848
+        group: DEFAULT_GROUP
+        namespace: 52478819-0492-4091-9890-eca56e726d39
+        fileExtension: yaml
