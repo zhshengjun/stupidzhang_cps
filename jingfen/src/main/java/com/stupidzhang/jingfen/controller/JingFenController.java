@@ -1,5 +1,6 @@
 package com.stupidzhang.jingfen.controller;
 
+import com.stupidzhang.common.model.Result;
 import com.stupidzhang.jingfen.constant.JdConstants;
 import com.stupidzhang.jingfen.service.JingFenApiService;
 import org.apache.commons.lang3.StringUtils;
@@ -21,8 +22,8 @@ public class JingFenController {
     private JingFenApiService jingFenApiService;
 
     @GetMapping(value = "/send")
-    public Object testSend(@RequestParam(value = "orderTimeStr", required = false) String orderTimeStr,
-                           @RequestParam(value = "interval", required = false) Integer interval) {
+    public Result<Object> testSend(@RequestParam(value = "orderTimeStr", required = false) String orderTimeStr,
+                                   @RequestParam(value = "interval", required = false) Integer interval) {
         LocalDateTime orderTime;
         if (StringUtils.isNotBlank(orderTimeStr)) {
             orderTime = LocalDateTime.parse(orderTimeStr, DateTimeFormatter.ofPattern(JdConstants.DATE_TIME_FORMAT));
@@ -35,8 +36,7 @@ public class JingFenController {
         LocalDateTime startTime = orderTime.minusMinutes(interval);
         String endTimeStr = orderTime.format(DateTimeFormatter.ofPattern(JdConstants.DATE_TIME_FORMAT));
         String startTimeStr = startTime.format(DateTimeFormatter.ofPattern(JdConstants.DATE_TIME_FORMAT));
-
-        return jingFenApiService.queryOrderList(startTimeStr, endTimeStr);
+        return Result.ok(jingFenApiService.queryOrderList(startTimeStr, endTimeStr));
     }
 
 

@@ -2,7 +2,7 @@ server:
   port: 8180
 spring:
   application:
-    name: jingfen
+    name: convert
   cloud:
     nacos:
       discovery:

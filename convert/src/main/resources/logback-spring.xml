@@ -5,7 +5,7 @@
     <!--从配置文件中读取配置属性 -->
     <springProperty scope="context" name="LEVEL" source="logback.level" defaultValue="INFO"/>
     <!-- 输出到服务器上的路径 -->
-    <property name="LOG_HOME" value="/home/jingfen"/>
+    <property name="LOG_HOME" value="/home/convert"/>
     <!-- 服务器上日志文件和控制台的输出规则 -->
     <property name="CONSOLE_LOG_PATTERN"
               value="%d{yyyy-MM-dd HH:mm:ss.SSS} %X{rid} [%thread] %-5level %logger{36} - %msg%n"/>

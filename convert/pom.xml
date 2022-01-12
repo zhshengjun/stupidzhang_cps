@@ -7,12 +7,11 @@
         <groupId>com.stupidzhang</groupId>
         <version>0.0.1</version>
     </parent>
-    <packaging>jar</packaging>
-    <artifactId>jingfen</artifactId>
 
+    <artifactId>convert</artifactId>
     <version>0.0.1</version>
-    <name>jingfen</name>
-
+    <name>convert</name>
+    <description>convert</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -27,26 +26,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>com.xuxueli</groupId>
-            <artifactId>xxl-job-core</artifactId>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>com.stupidzhang</groupId>
-            <artifactId>jingdong-api</artifactId>
-            <version>2.0</version>
-            <scope>system</scope>
-            <systemPath>${pom.basedir}/src/main/resources/libs/open-api-sdk-2.0.jar</systemPath>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-mapper-asl</artifactId>
-            <version>1.9.13</version>
-        </dependency>
-
     </dependencies>
 
     <build>
