@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>stupidzhang-cps</artifactId>
+        <groupId>com.stupidzhang</groupId>
+        <version>0.0.1</version>
+    </parent>
+    <packaging>jar</packaging>
+    <artifactId>domain</artifactId>
+    <name>domain</name>
+    <description>domain</description>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.stupidzhang</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.stupidzhang</groupId>
+            <artifactId>infrastructure</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.stupidzhang</groupId>
+            <artifactId>jd-api</artifactId>
+            <version>2.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/src/main/resources/libs/jd-open-api-sdk-2.0.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.stupidzhang</groupId>
+            <artifactId>dataoke-api</artifactId>
+            <version>0.0.1</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/src/main/resources/libs/dtk-java-open-platform-sdk.jar</systemPath>
+        </dependency>
+    </dependencies>
+
+</project>

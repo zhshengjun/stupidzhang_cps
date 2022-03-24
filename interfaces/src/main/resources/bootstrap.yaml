@@ -1,0 +1,24 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: cps-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 1.116.77.127:4848
+        group: DEFAULT_GROUP
+        namespace: 52478819-0492-4091-9890-eca56e726d39
+      config:
+        server-addr: 1.116.77.127:4848
+        group: DEFAULT_GROUP
+        namespace: 52478819-0492-4091-9890-eca56e726d39
+        fileExtension: yaml
+
+convert:
+  platform:
+    type: DTK
+    dataoke:
+      unionId: 1003138166
+      appKey: 609c83361bb32
+      appSecret: 0f37aaf5b14a6127e68ac510eab75e92
