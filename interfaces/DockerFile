@@ -3,6 +3,7 @@ MAINTAINER stupidzhang
 ARG JAR_FILE=/target/*.jar
 RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 COPY ${JAR_FILE} /app.jar
+ENV TZ=Asia/Shanghai
 EXPOSE 8280
 HEALTHCHECK CMD curl -fs http://localhost:8280/health/check || exit 1
 ENTRYPOINT ["sh","-c","java $JAVA_OPTS -jar /app.jar"]

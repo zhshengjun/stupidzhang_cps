@@ -1,6 +1,7 @@
 package com.stupidzhang.domain.order.model.vo;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 订单明细
@@ -9,6 +10,7 @@ import lombok.Data;
  * @date 2022/3/12 11:04
  */
 @Data
+@NoArgsConstructor
 public class OrderInfoVO {
 
     /**

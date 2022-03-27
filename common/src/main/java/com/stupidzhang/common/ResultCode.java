@@ -8,6 +8,8 @@ package com.stupidzhang.common;
  */
 public class ResultCode {
 
+    public static final int _0 = 0;
+
     public static final int _200 = 200;
 
     public static final int _500 = 500;

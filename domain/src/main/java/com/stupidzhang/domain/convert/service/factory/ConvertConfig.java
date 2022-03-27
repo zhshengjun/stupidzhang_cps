@@ -1,6 +1,7 @@
 package com.stupidzhang.domain.convert.service.factory;
 
 import com.stupidzhang.common.enums.ResourcePlatform;
+import com.stupidzhang.domain.config.PlatformConfig;
 import com.stupidzhang.domain.convert.service.ConvertService;
 import com.stupidzhang.domain.convert.service.impl.covert.*;
 import org.springframework.stereotype.Component;
@@ -15,7 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @date 2022/3/12 14:10
  */
 @Component
-public class ConvertConfig {
+public class ConvertConfig extends PlatformConfig {
 
     /**
      * 转换策略组

@@ -1,18 +1,20 @@
-package com.stupidzhang.domain.convert.service.factory.client;
+package com.stupidzhang.domain.config;
 
 import com.dtk.api.client.DtkApiClient;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+@RefreshScope
 @Configuration
-public class DaTaoKeClientConfig {
+public class DaTaoKeClient {
 
 
-    @Value("${convert.platform.dataoke.appKey:}")
+    @Value("${cps.platform.dataoke.appKey:}")
     private String appKey;
 
-    @Value("${convert.platform.dataoke.appSecret:}")
+    @Value("${cps.platform.dataoke.appSecret:}")
     private String appSecret;
 
 

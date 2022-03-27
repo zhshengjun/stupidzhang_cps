@@ -24,7 +24,7 @@ import org.springframework.stereotype.Service;
 public class DaTaoKe4JingDongConvert implements ConvertService {
 
 
-    @Value("${convert.platform.dataoke.unionId:}")
+    @Value("${cps.platform.dataoke.unionId:}")
     private String unionId;
 
     @Autowired

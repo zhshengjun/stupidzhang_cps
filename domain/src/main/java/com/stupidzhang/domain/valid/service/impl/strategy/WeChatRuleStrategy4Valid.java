@@ -1,8 +1,8 @@
-package com.stupidzhang.domain.convert.service.impl.strategy;
+package com.stupidzhang.domain.valid.service.impl.strategy;
 
 import com.stupidzhang.common.enums.ResourcePlatform;
-import com.stupidzhang.domain.convert.model.req.ConvertReq;
-import com.stupidzhang.domain.convert.service.RuleStrategy;
+import com.stupidzhang.domain.valid.model.req.ValidReq;
+import com.stupidzhang.domain.valid.service.RuleStrategy4Valid;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,10 +10,10 @@ import org.springframework.stereotype.Service;
  * @date 2022/3/12 15:12
  */
 @Service
-public class WeChatRuleStrategy implements RuleStrategy {
+public class WeChatRuleStrategy4Valid implements RuleStrategy4Valid {
 
     @Override
-    public Boolean match(ConvertReq convertReq) {
+    public Boolean match(ValidReq validReq) {
         return null;
     }
 

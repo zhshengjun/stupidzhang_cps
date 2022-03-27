@@ -47,6 +47,10 @@
             <scope>system</scope>
             <systemPath>${pom.basedir}/src/main/resources/libs/dtk-java-open-platform-sdk.jar</systemPath>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-context</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
