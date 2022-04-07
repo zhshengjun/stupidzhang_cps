@@ -1,6 +1,6 @@
 package com.stupidzhang.application;
 
-import com.stupidzhang.domain.convert.model.req.ConvertReq;
+import com.stupidzhang.domain.model.req.ConvertReq;
 
 /**
  * @author stupidzhang

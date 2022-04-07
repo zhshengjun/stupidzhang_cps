@@ -1,6 +1,6 @@
 package com.stupidzhang.application;
 
-import com.stupidzhang.domain.valid.model.req.ValidReq;
+import com.stupidzhang.domain.model.req.ValidReq;
 
 /**
  * @author stupidzhang

@@ -2,8 +2,8 @@ package com.stupidzhang.interfaces.controller;
 
 import com.stupidzhang.application.CpsOrderService;
 import com.stupidzhang.common.Result;
-import com.stupidzhang.domain.order.model.req.OrderReq;
-import com.stupidzhang.domain.order.model.vo.OrderInfoVO;
+import com.stupidzhang.domain.model.req.OrderReq;
+import com.stupidzhang.domain.model.vo.OrderInfoVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

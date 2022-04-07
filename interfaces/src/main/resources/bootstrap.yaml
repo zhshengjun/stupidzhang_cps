@@ -1,22 +1,22 @@
 server:
   port: 8080
+nacos:
+  server-addr: nas.stupidzhang.com:4848
+  namespace: 52478819-0492-4091-9890-eca56e726d39
 spring:
   application:
     name: cps-server
   cloud:
     nacos:
       discovery:
-        server-addr: nas.stupidzhang.com:4848
-        group: DEFAULT_GROUP
-        namespace: 52478819-0492-4091-9890-eca56e726d39
+        server-addr: ${nacos.server-addr}
+        namespace: ${nacos.namespace}
       config:
-        server-addr: nas.stupidzhang.com:4848
-        group: DEFAULT_GROUP
-        namespace: 52478819-0492-4091-9890-eca56e726d39
+        server-addr: {nacos.server-addr}
+        namespace: ${nacos.namespace}
         fileExtension: yaml
-        shared-configs[0]:
-          data-id: cps.yaml
-          refresh: true
-        shared-configs[1]:
-          data-id: link-match.yaml
-          refresh: true
+        shared-configs:
+          - data-id: cps.yaml
+            refresh: true
+          - data-id: link-match.yaml
+            refresh: true

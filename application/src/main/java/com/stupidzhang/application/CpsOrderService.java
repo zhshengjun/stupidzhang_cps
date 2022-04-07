@@ -1,7 +1,7 @@
 package com.stupidzhang.application;
 
-import com.stupidzhang.domain.order.model.req.OrderReq;
-import com.stupidzhang.domain.order.model.vo.OrderInfoVO;
+import com.stupidzhang.domain.model.req.OrderReq;
+import com.stupidzhang.domain.model.vo.OrderInfoVO;
 
 import java.util.List;
 
