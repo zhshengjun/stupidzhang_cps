@@ -1,7 +1,7 @@
 server:
   port: 8080
 nacos:
-  server-addr: nas.stupidzhang.com:4848
+  server-addr: http://nacos.stupidzhang.com:4848
   namespace: 52478819-0492-4091-9890-eca56e726d39
 spring:
   application:
@@ -12,7 +12,7 @@ spring:
         server-addr: ${nacos.server-addr}
         namespace: ${nacos.namespace}
       config:
-        server-addr: {nacos.server-addr}
+        server-addr: ${nacos.server-addr}
         namespace: ${nacos.namespace}
         fileExtension: yaml
         shared-configs:
